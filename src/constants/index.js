@@ -9,13 +9,13 @@ export const ABOUT_TEXT = `Como desarrollador full-stack junior, mi principal en
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Suerte Paisa",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-    repo:"https://github.com/jarenas1?tab=repositories",
-    deploy:"https://github.com/jarenas1?tab=repositories",
+      "Suerte Paisa es una plataforma digital que conecta a usuarios y administradores en el mundo de las loterías. Los usuarios pueden explorar y adquirir boletos de manera sencilla y segura, mientras que los administradores cuentan con herramientas intuitivas para gestionar rifas, monitorear ventas y optimizar la experiencia general.",
+    technologies: ["Blade", "CSS", "PHP", "Laravel", "Mysql", "Oauth2", "Github Actions"],
+    repo:"https://github.com/Crudzaso/suerte_paisa.git",
+    deploy:"https://suerte-paisa.crudzaso.com/",
   },
   {
     title: "Task Management App",
