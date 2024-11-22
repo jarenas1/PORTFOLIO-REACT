@@ -13,7 +13,7 @@ export const PROJECTS = [
     image: project1,
     description:
       "Suerte Paisa es una plataforma digital que conecta a usuarios y administradores en el mundo de las loterías. Los usuarios pueden explorar y adquirir boletos de manera sencilla y segura, mientras que los administradores cuentan con herramientas intuitivas para gestionar rifas, monitorear ventas y optimizar la experiencia general.",
-    technologies: ["Blade", "CSS", "PHP", "Laravel", "Mysql", "Oauth2", "Github Actions"],
+    technologies: ["Blade", "CSS", "PHP", "Laravel", "Mysql", "Oauth2", "Actions"],
     repo:"https://github.com/Crudzaso/suerte_paisa.git",
     deploy:"https://suerte-paisa.crudzaso.com/",
   },
