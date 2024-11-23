@@ -8,6 +8,7 @@ const Navbar = () => {
 
   const handleClickBurguer = () => {
     setIsOpen(!isOpen);
+    localStorage.setItem('closed-hb-menu-pripra', isOpen);
   };
 
   useEffect(() => {
@@ -42,7 +43,7 @@ const Navbar = () => {
             <a href="#technologies" className="py-1 hover:text-purple-500 transition-colors duration-200">Tecnologías</a>
             <a href="#projects" className="py-1 hover:text-purple-500 transition-colors duration-200">Proyectos</a>
             <a href="#contact" className="py-1 hover:text-purple-500 transition-colors duration-200">Contacto</a>
-            <a href className="bg-purple-600 rounded-lg py-1 px-2">Descargar cv</a>
+            <a href="" className="bg-purple-600 rounded-lg py-1 px-2">Descargar cv</a>
           </div>
 
           <button
@@ -79,7 +80,7 @@ const Navbar = () => {
       </header>
 
       <div 
-        className={`fixed top-0 left-0 w-full h-screen bg-black/50 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
+        className={`fixed top-0 left-0 w-full h-screen z-10 bg-black/50 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
         onClick={() => setIsOpen(false)}
@@ -87,7 +88,7 @@ const Navbar = () => {
 
       <section className="w-full justify-center flex mb-28 z-50">
         <div
-          className={`w-full bg-neutral-900 flex-col fixed mt-20 sm:mt-32 pt-6 mb-28 transition-all duration-300 ease-in-out lg:hidden ${
+          className={`z-30 w-full bg-neutral-900 flex-col fixed mt-20 sm:mt-32 pt-6 mb-28 transition-all duration-300 ease-in-out lg:hidden ${
             isOpen 
               ? "opacity-100 translate-y-0 visible" 
               : "opacity-0 -translate-y-full invisible"
@@ -109,7 +110,7 @@ const Navbar = () => {
             <a href="#contact" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
               Contacto
             </a>
-            <a href className="bg-purple-600 rounded-lg py-1 px-2 text-center block">Descargar cv</a>
+            <a href="" className="bg-purple-600 rounded-lg py-1 px-2 text-center block">Descargar cv</a>
           </div>
           
           {/* MOBILE ICONS */}

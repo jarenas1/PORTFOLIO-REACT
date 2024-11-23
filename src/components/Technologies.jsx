@@ -29,7 +29,7 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div className='border-b border-neutral-800 pb-24 lg:scroll-mt-40 scroll-mt-32 xl:scroll-mt-80 md:scroll-mt-48' id='technologies'>
+    <div className='border-b border-neutral-800 pb-24 lg:scroll-mt-40 scroll-mt-32 xl:scroll-mt-8 md:scroll-mt-48' id='technologies'>
         <motion.h2 
         whileInView={{opacity: 1, y: 0}}
         initial={{opacity:0, y:-100}}
