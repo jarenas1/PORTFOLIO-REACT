@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 const Projects = () => {
   return (
-    <div className='border-b border-neutral-900 pb-24 scroll-mt-44' id='projects'>
+    <div className='border-b border-neutral-900 pb-24 scroll-mt-4 xl:scroll-mt-64 md:scroll-mt-44' id='projects'>
       <motion.h2 
       whileInView={{opacity:1, y:0}}
       initial={{opacity:0, y: -100}}
@@ -32,12 +32,14 @@ const Projects = () => {
                             className='w-full max-w-xl lg:w-3/4'>
                                 <h6 className='mb-2 font-semibold'>{project.title}</h6>
                                 <p className='mb-4 text-neutral-400'>{project.description}</p>
+                                <div className='flex flex-row flex-wrap'>
                                 {project.technologies.map((tech, index) => (
-                                    <span key={index} className='mr-2 rounded bg-neutral-900 px-2 py-1 text-sm  text-purple-900 font-semibold'>{tech}</span>
+                                        <span key={index} className=' mt-3 mr-2 rounded bg-neutral-900 px-2 py-1 text-sm  text-purple-900 font-semibold'>{tech}</span>
                                 ))}
+                                </div>
                                 <div className='flex flex-row gap-5 my-5'>
                                     {project.deploy && <a className='mr-2 px-2 py-1 rounded bg-neutral-900 text-purple-900 font-semibold hover:bg-purple-900 hover:text-neutral-900 transition-all duration-300' 
-                                    href={project.deploy} target="_blank">Deploy Link</a>}
+                                    href={project.deploy} target="_blank">Ver web</a>}
                                     <a className='mr-2 px-2 py-1 rounded bg-neutral-900 text-purple-900 font-semibold hover:bg-purple-900 hover:text-neutral-900 transition-all duration-300'
                                     href={project.repo} target="_blank" >Github</a>
                                 </div>

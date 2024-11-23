@@ -58,7 +58,7 @@ const Contact = () => {
         whileInView={{opacity:1, y:0}}
         initial={{opacity:0, y: -100}}
         transition={{duration: 0.5}}
-       className='my-16 text-center text-4xl mb-28 scroll-mt-28 xl:scroll-mt-40 lg:scroll-mt-40 md:scroll-mt-40'
+       className='my-16 text-center text-4xl mb-28 scroll-mt-28 xl:scroll-mt-40 lg:scroll-mt-36 md:scroll-mt-40'
        id="contact"> Contacto
        </motion.h2>
         <section className='border-b border-neutral-900 flex flex-col lg:flex-row justify-center items-center mb-28 pb-24' >

@@ -63,16 +63,16 @@ const Navbar = () => {
           </button>
 
           <div className="m-8 hidden lg:flex items-center justify-center gap-4 text-2xl">
-          <a href="#" className="hover:text-purple-500 transition-colors duration-200">
+          <a href="https://www.linkedin.com/in/juan-jos%C3%A9-arenas-gaviria-144b79249/" className="hover:text-purple-500 transition-colors duration-200">
               <FaLinkedin />
             </a>
-            <a href="#" className="hover:text-purple-500 transition-colors duration-200">
+            <a href="https://github.com/jarenas1" className="hover:text-purple-500 transition-colors duration-200">
               <FaGithub />
             </a>
-            <a href="#" className="hover:text-purple-500 transition-colors duration-200">
+            <a href="https://www.instagram.com/juan______a07/?hl=es" className="hover:text-purple-500 transition-colors duration-200">
               <FaInstagram />
             </a>
-            <a href="#" className="hover:text-purple-500 transition-colors duration-200">
+            <a href="https://api.whatsapp.com/send?phone=573022260938&text=Hola%20Jarenas1%2C" className="hover:text-purple-500 transition-colors duration-200">
               <FaWhatsapp />
             </a>
           </div>
@@ -115,16 +115,16 @@ const Navbar = () => {
           
           {/* MOBILE ICONS */}
           <div className="flex items-center justify-center gap-4 text-2xl mt-6 text-white pb-4">
-            <a href="#" className="hover:text-purple-500 transition-colors duration-200">
+            <a href="https://www.linkedin.com/in/juan-jos%C3%A9-arenas-gaviria-144b79249/" className="hover:text-purple-500 transition-colors duration-200">
               <FaLinkedin />
             </a>
-            <a href="#" className="hover:text-purple-500 transition-colors duration-200">
+            <a href="https://github.com/jarenas1" className="hover:text-purple-500 transition-colors duration-200">
               <FaGithub />
             </a>
-            <a href="#" className="hover:text-purple-500 transition-colors duration-200">
+            <a href="https://www.instagram.com/juan______a07/?hl=es" className="hover:text-purple-500 transition-colors duration-200">
               <FaInstagram />
             </a>
-            <a href="#" className="hover:text-purple-500 transition-colors duration-200">
+            <a href="https://api.whatsapp.com/send?phone=573022260938&text=Hola%20Jarenas1%2C" className="hover:text-purple-500 transition-colors duration-200">
               <FaWhatsapp />
             </a>
           </div>

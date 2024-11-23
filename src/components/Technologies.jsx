@@ -11,7 +11,10 @@ import { SiMongodb } from 'react-icons/si'
 import { FaHtml5 } from 'react-icons/fa6'
 import { SiGithubactions } from 'react-icons/si'
 import {DiDocker } from 'react-icons/di'
-
+import { RiTailwindCssLine } from "react-icons/ri";
+import { FaBootstrap } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 import { motion } from "framer-motion"
 
 const iconVariants = (duration) => ({
@@ -29,7 +32,7 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div className='border-b border-neutral-800 pb-24 lg:scroll-mt-40 scroll-mt-32 xl:scroll-mt-8 md:scroll-mt-48' id='technologies'>
+    <div className='border-b border-neutral-800 pb-24 lg:scroll-mt-40 scroll-mt-32 xl:scroll-mt-44 md:scroll-mt-96' id='technologies'>
         <motion.h2 
         whileInView={{opacity: 1, y: 0}}
         initial={{opacity:0, y:-100}}
@@ -123,6 +126,34 @@ const Technologies = () => {
             animate="animate"
             className='rounded-2xl border-4 border-neutral-800 p-4'>
                 <DiSass className='text-6xl text-pink-400 hover:scale-110 transition-all ease-in-out'/>
+            </motion.div>
+            <motion.div
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <RiTailwindCssLine className='text-6xl text-blue-500 hover:scale-110 transition-all ease-in-out'/>
+            </motion.div>
+            <motion.div
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <FaBootstrap className='text-6xl text-purple-600 hover:scale-110 transition-all ease-in-out'/>
+            </motion.div>
+            <motion.div
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <FaFigma className='text-6xl text-pink-500 hover:scale-110 transition-all ease-in-out'/>
+            </motion.div>
+            <motion.div
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <FaGithub className='text-6xl text-black hover:scale-110 transition-all ease-in-out'/>
             </motion.div>
         </motion.div>
     </div>
