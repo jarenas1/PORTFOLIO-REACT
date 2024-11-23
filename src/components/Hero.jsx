@@ -4,7 +4,7 @@ import profilePic from "../assets/kevinRushProfile.jpg"
 
 const Hero = () => {
   return (
-    <div className='border-b border-neutral-900 pb-4 lg:mb-35'>
+    <div className='border-b border-neutral-900 lg:mb-35 pb-24 sm:mt-48 mt-36'>
       <div className='flex flex-wrap'>
         <div className='w-full lg:w-1/2'>
             <div className='flex flex-col items-center lg:items-start'>
@@ -16,7 +16,7 @@ const Hero = () => {
         </div>
         <div className='w-full lg:w-1/2 lg:p-8'>
             <div className='flex justify-center'>
-                <img src={profilePic} alt="Juan Arenas" className='w-96 rounded-[500px] mt-20 lg:ml-44'/>
+                <img src={profilePic} alt="Juan Arenas" className='w-96 rounded-[500px] mt-20 lg:ml-44 border-2 gap-12  border-purple-500 '/>
             </div>
         </div>
       </div>

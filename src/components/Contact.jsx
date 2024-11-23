@@ -54,7 +54,7 @@ const Contact = () => {
     return (
       <>
        <h2 className='my-16 text-center text-4xl mb-28'> Contacto</h2>
-        <section className='border-b border-neutral-900 pb-14 flex flex-col lg:flex-row justify-center items-center mb-28' >
+        <section className='border-b border-neutral-900 flex flex-col lg:flex-row justify-center items-center mb-28 pb-24' >
          
 
           <form onSubmit={sendEmail} className="p-4 w-full flex flex-col items-center justify-center ">

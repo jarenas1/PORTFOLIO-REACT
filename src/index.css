@@ -6,3 +6,20 @@
 :root{
   font-family: "Roboto", sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 10px; 
+  height: 10px;
+}
+
+/* Fondo de la barra de scroll */
+::-webkit-scrollbar-track {
+  background: #14141b;
+  border-radius: 0px; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #a556f2; /* Color del thumb */
+  border-radius: 5px; /* Bordes redondeados */
+}
