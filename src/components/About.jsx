@@ -4,7 +4,7 @@ import { ABOUT_TEXT } from '../constants'
 import { delay, motion } from "framer-motion"
 const About = () => {
   return (
-    <div className='border-b border-neutral-900 pb-24'>
+    <div className='border-b border-neutral-900 pb-24 scroll-mt-40' id='about'>
         <h2 className='my-20 text-center text-4xl'>
             Sobre <span className='text-neutral-500'>mi</span>
         </h2>

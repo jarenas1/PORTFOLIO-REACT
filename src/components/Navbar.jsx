@@ -37,11 +37,11 @@ const Navbar = () => {
           </div>
           
           <div className="justify-around xl:w-2/5 lg:w-4/6 hidden lg:flex">
-            <a href="#hero" className="py-1">Inicio</a>
-            <a href="#about" className="py-1">Sobre mí</a>
-            <a href="#technologies" className="py-1">Tecnologías</a>
-            <a href="#projects" className="py-1">Proyectos</a>
-            <a href="#contact" className="py-1">Contacto</a>
+            <a href="#hero" className="py-1 hover:text-purple-500 transition-colors duration-200">Inicio</a>
+            <a href="#about" className="py-1 hover:text-purple-500 transition-colors duration-200">Sobre mí</a>
+            <a href="#technologies" className="py-1 hover:text-purple-500 transition-colors duration-200">Tecnologías</a>
+            <a href="#projects" className="py-1 hover:text-purple-500 transition-colors duration-200">Proyectos</a>
+            <a href="#contact" className="py-1 hover:text-purple-500 transition-colors duration-200">Contacto</a>
             <a href className="bg-purple-600 rounded-lg py-1 px-2">Descargar cv</a>
           </div>
 
@@ -62,10 +62,18 @@ const Navbar = () => {
           </button>
 
           <div className="m-8 hidden lg:flex items-center justify-center gap-4 text-2xl">
-            <FaLinkedin />
-            <FaGithub />
-            <FaInstagram />
-            <FaWhatsapp />
+          <a href="#" className="hover:text-purple-500 transition-colors duration-200">
+              <FaLinkedin />
+            </a>
+            <a href="#" className="hover:text-purple-500 transition-colors duration-200">
+              <FaGithub />
+            </a>
+            <a href="#" className="hover:text-purple-500 transition-colors duration-200">
+              <FaInstagram />
+            </a>
+            <a href="#" className="hover:text-purple-500 transition-colors duration-200">
+              <FaWhatsapp />
+            </a>
           </div>
         </nav>
       </header>
@@ -77,7 +85,7 @@ const Navbar = () => {
         onClick={() => setIsOpen(false)}
       />
 
-      <section className="w-full justify-center flex mb-28">
+      <section className="w-full justify-center flex mb-28 z-50">
         <div
           className={`w-full bg-neutral-900 flex-col fixed mt-20 sm:mt-32 pt-6 mb-28 transition-all duration-300 ease-in-out lg:hidden ${
             isOpen 
@@ -86,19 +94,19 @@ const Navbar = () => {
           }`}
         >
           <div>
-            <a href="#hero" className="py-2 text-white text-center block hover:bg-neutral-800 transition-colors duration-200">
+            <a href="#hero" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
               Inicio
             </a>
-            <a href="#about" className="py-2 text-white text-center block hover:bg-neutral-800 transition-colors duration-200">
+            <a href="#about" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
               Sobre mí
             </a>
-            <a href="#technologies" className="py-2 text-white text-center block hover:bg-neutral-800 transition-colors duration-200">
+            <a href="#technologies" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
               Tecnologías
             </a>
-            <a href="#projects" className="py-2 text-white text-center block hover:bg-neutral-800 transition-colors duration-200">
+            <a href="#projects" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
               Proyectos
             </a>
-            <a href="#contact" className="py-2 text-white text-center block hover:bg-neutral-800 transition-colors duration-200">
+            <a href="#contact" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
               Contacto
             </a>
             <a href className="bg-purple-600 rounded-lg py-1 px-2 text-center block">Descargar cv</a>

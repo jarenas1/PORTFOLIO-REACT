@@ -12,7 +12,7 @@ const container = (delay) => ({
 })
 const Hero = () => {
   return (
-    <div className='border-b border-neutral-900 lg:mb-35 pb-24 sm:mt-48 mt-36'>
+    <div className='border-b border-neutral-900 lg:mb-35 pb-24 sm:mt-48 mt-36 md:scroll-mt-48  scroll-mt-28' id='hero'>
       <div className='flex flex-wrap'>
         <div className='w-full lg:w-1/2'>
             <div className='flex flex-col items-center lg:items-start'>

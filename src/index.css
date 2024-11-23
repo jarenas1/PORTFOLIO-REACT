@@ -23,3 +23,8 @@
   background: #a556f2; /* Color del thumb */
   border-radius: 5px; /* Bordes redondeados */
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
