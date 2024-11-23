@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import astronauta from "../assets/nelson-tiapa-gif-con-telefono.gif"
+import { delay, motion } from "framer-motion"
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -53,13 +54,23 @@ const Contact = () => {
     
     return (
       <>
-       <h2 className='my-16 text-center text-4xl mb-28'> Contacto</h2>
+       <motion.h2 
+        whileInView={{opacity:1, y:0}}
+        initial={{opacity:0, y: -100}}
+        transition={{duration: 0.5}}
+       className='my-16 text-center text-4xl mb-28'> Contacto</motion.h2>
         <section className='border-b border-neutral-900 flex flex-col lg:flex-row justify-center items-center mb-28 pb-24' >
          
 
-          <form onSubmit={sendEmail} className="p-4 w-full flex flex-col items-center justify-center ">
+        <form 
+        onSubmit={sendEmail} className="p-4 w-full flex flex-col items-center justify-center l">
 
-              <div className="mb-4 w-full flex flex-col items-center justify-center ">
+              <motion.div 
+              whileInView={{opacity:1, x:0, y:0}}
+              initial={{opacity:0, x: -100}}
+              transition={{duration: 0.5, delay: 0}}
+              className="mb-4 w-full flex flex-col items-center justify-center ">
+                
                   <input
                       type="text"
                       id="name"
@@ -70,9 +81,13 @@ const Contact = () => {
                       placeholder="Escribe tu nombre"
                       required
                   />
-              </div>
+              </motion.div>
 
-              <div className="mb-4 w-full  text-black flex flex-col items-center justify-center">
+              <motion.div 
+              whileInView={{opacity:1, x:0, y:0}}
+              initial={{opacity:0, x: 100}}
+              transition={{duration: 0.5}}
+              className="mb-4 w-full  text-black flex flex-col items-center justify-center">
               <input
                 type="email"
                 id="email"
@@ -83,9 +98,13 @@ const Contact = () => {
                 placeholder="Escribe tu correo"
                 required
               />
-            </div>
+            </motion.div>
 
-            <div className="mb-4 w-full flex flex-col items-center justify-center">
+            <motion.div
+            whileInView={{opacity:1, x:0, y:0}}
+            initial={{opacity:0, y: 100}}
+            transition={{duration: 0.5}}
+            className="mb-4 w-full flex flex-col items-center justify-center">
               <textarea
                 id="message"
                 name="message"
@@ -96,7 +115,7 @@ const Contact = () => {
                 rows="4"
                 required
               />
-            </div>
+            </motion.div>
             <div className="flex items-center justify-between"></div>
             <button
               type="submit"
@@ -106,7 +125,11 @@ const Contact = () => {
             </button>
           </form>
 
-          <img src={astronauta} alt="Astronauta gif" className='mt-20 lg:mt-0 lg:relative lg:bottom-6  w-72 lg:w-80 lg:mr-6v lg:ml-6 '  />
+          <motion.img 
+          whileInView={{opacity:1, y:0}}
+          initial={{opacity:0, y: 200}}
+          transition={{duration: 0.5, delay: 0.2}}
+          src={astronauta} alt="Astronauta gif" className='mt-20 lg:mt-0 lg:relative lg:bottom-6  w-72 lg:w-80 lg:mr-6v lg:ml-6 '  />
         </section>
         </>
       );
