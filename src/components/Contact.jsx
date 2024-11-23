@@ -66,7 +66,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full p-1 border text-black border-gray-300 rounded lg:w-3/4 lg:p-2"
+                      className="w-full p-1 border text-black border-gray-300 rounded lg:w-4/4 xl:w-3/4 lg:p-2"
                       placeholder="Escribe tu nombre"
                       required
                   />
@@ -79,7 +79,7 @@ const Contact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-1 border  text-black border-gray-300 rounded lg:w-3/4 lg:p-2"
+                className="w-full p-1 border  text-black border-gray-300 rounded lg:w-4/4 xl:w-3/4 lg:p-2"
                 placeholder="Escribe tu correo"
                 required
               />
@@ -91,7 +91,7 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-1 border  text-black border-gray-900 rounded lg:w-3/4 lg:p-2"
+                className="w-full p-1 border  text-black border-gray-900 rounded lg:w-4/4 xl:w-3/4 lg:p-2"
                 placeholder="Escribe tu mensaje"
                 rows="4"
                 required
@@ -100,13 +100,13 @@ const Contact = () => {
             <div className="flex items-center justify-between"></div>
             <button
               type="submit"
-              className="bg-gradient-to-r from-pink-300  to-purple-500 text-white  font-semibold hover:text-gray-600 transition-all duration-300 py-2 px-4 rounded"
+              className="bg-gradient-to-r from-pink-300  to-purple-500 text-white  font-semibold hover:text-gray-600 transition-all duration-300 py-2 px-4 mt-4 rounded"
             >
               Enviar
             </button>
           </form>
 
-          <img src={astronauta} alt="Astronauta gif" className='mt-20 lg:mt-0 lg:relative lg:bottom-6  w-72 lg:w-80'  />
+          <img src={astronauta} alt="Astronauta gif" className='mt-20 lg:mt-0 lg:relative lg:bottom-6  w-72 lg:w-80 lg:mr-6v lg:ml-6 '  />
         </section>
         </>
       );
