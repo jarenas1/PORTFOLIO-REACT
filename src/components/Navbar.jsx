@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/jarenas1Logo.png";
-import cv from "../assets/JuanJoseArenasCV.pdf"
+
 <assets />
 import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
@@ -45,7 +45,7 @@ const Navbar = () => {
             <a href="#technologies" className="py-1 hover:text-purple-500 transition-colors duration-200">Tecnologías</a>
             <a href="#projects" className="py-1 hover:text-purple-500 transition-colors duration-200">Proyectos</a>
             <a href="#contact" className="py-1 hover:text-purple-500 transition-colors duration-200">Contacto</a>
-            <a href={cv} download="JuanJoséArenasGaviriaCV.pdf" className="bg-purple-600 rounded-lg py-1 px-2">Descargar cv</a>
+            <a href="../../public/JuanJoseArenasCV.pdf" download="JuanJoséArenasGaviriaCV.pdf" className="bg-purple-600 rounded-lg py-1 px-2">Descargar cv</a>
           </div>
 
           <button
@@ -112,7 +112,7 @@ const Navbar = () => {
             <a href="#contact" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
               Contacto
             </a>
-            <a href={cv} download="JuanJoséArenasGaviriaCV.pdf" className="bg-purple-600 rounded-lg py-1 px-2 text-center block">Descargar cv</a>
+            <a href="../../public/JuanJoseArenasCV.pdf" download="JuanJoséArenasGaviriaCV.pdf" className="bg-purple-600 rounded-lg py-1 px-2 text-center block">Descargar cv</a>
           </div>
           
           {/* MOBILE ICONS */}
