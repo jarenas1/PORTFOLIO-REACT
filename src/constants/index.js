@@ -18,31 +18,31 @@ export const PROJECTS = [
     deploy:"https://suerte-paisa.crudzaso.com/",
   },
   {
-    title: "Task Management App",
+    title: "EasyOrder",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-    repo:"https://github.com/jarenas1?tab=repositories",
-    deploy:"https://github.com/jarenas1?tab=repositories",
+      "EasyOrder es un innovador SaaS diseñado para bares y discotecas, que optimiza la eficiencia y velocidad del servicio. Permite a los clientes realizar pedidos directamente desde sus mesas mediante un código QR, eliminando la espera y facilitando la identificación de cada mesa. Una solución que transforma la experiencia del usuario y potencia el rendimiento del personal.",
+    technologies: ["HTML", "SCSS", "React", "Nestjs, Tailwind, PostgreSQL"],
+    repo:"https://github.com/jarenas1/EasyOrder-FRONTEND.git",
+    deploy:"https://jarenas1.github.io/EasyOrder--LANDING-PAGE/",
   },
   {
-    title: "Portfolio Website",
+    title: "MovieMatch",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-    repo:"https://github.com/jarenas1?tab=repositories",
+      "MovieMatch elimina la indecisión al elegir qué película ver. Simplemente selecciona tus géneros favoritos, y la plataforma te mostrará películas que coincidan con tus preferencias. Cuando encuentres la ideal, podrás hacer match para seleccionarla o descartarla y explorar otras opciones. ¡Descubre tu próxima película favorita de manera rápida y sencilla!",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "JsonServer"],
+    repo:"https://github.com/daniela03h/moviematch.git",
     deploy:"",
   },
   {
-    title: "Blogging Platform",
+    title: "Jarenas1",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-    repo:"https://github.com/jarenas1?tab=repositories",
-    deploy:"",
+      "Este es un proyecto diseñado para destacar habilidades y creatividad. Funciona como un portafolio digital interactivo que organiza y presenta trabajos, proyectos y logros de manera visualmente atractiva. Su diseño moderno y funcional permite una navegación intuitiva, ideal para causar una impresión profesional y mostrar talento al máximo nivel.",
+    technologies: ["JSX", "CSS", "React", "Tailwind", "Motion"],
+    repo:"https://github.com/jarenas1/PORTFOLIO-REACT.git",
+    deploy:"https://jarenas1.online/",
   },
 ];
 
