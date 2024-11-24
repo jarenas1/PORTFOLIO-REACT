@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/jarenas1Logo.png";
-import cv from "../assets/JuanJoseArenasCV.pdf"
-<assets />
+import cv from "../assets/JuanJoseArenasCV.pdf";
 import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
@@ -29,13 +28,13 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full flex justify-center">
-         <nav
-          className={`mb-24 flex items-center justify-between py-0 fixed z-30 w-full transition-all duration-300 ease-in-out ${
+      <header className="fixed top-0 left-0 right-0 z-50">
+        <nav
+          className={`flex items-center justify-between w-full transition-all duration-300 ease-in-out ${
             shouldShowBackground ? "bg-neutral-900" : "bg-transparent"
           }`}
         >
-          <div className="flex flex-shrink-0 items-center ml-4">
+          <div className="flex flex-shrink-0 items-center ml-4 py-2">
             <img src={logo} alt="jarenas1 logo" className="w-40 sm:w-60" />
           </div>
           
@@ -65,7 +64,7 @@ const Navbar = () => {
           </button>
 
           <div className="m-8 hidden lg:flex items-center justify-center gap-4 text-2xl">
-          <a href="https://www.linkedin.com/in/juan-jos%C3%A9-arenas-gaviria-144b79249/" className="hover:text-purple-500 transition-colors duration-200">
+            <a href="https://www.linkedin.com/in/juan-jos%C3%A9-arenas-gaviria-144b79249/" className="hover:text-purple-500 transition-colors duration-200">
               <FaLinkedin />
             </a>
             <a href="https://github.com/jarenas1" className="hover:text-purple-500 transition-colors duration-200">
@@ -81,41 +80,43 @@ const Navbar = () => {
         </nav>
       </header>
 
+      {/* Mobile Menu Overlay */}
       <div 
-        className={`fixed top-0 left-0 w-full h-screen z-10 bg-black/50 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
+        className={`fixed top-0 left-0 w-full h-screen z-40 bg-black/50 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
         onClick={() => setIsOpen(false)}
       />
 
-      <section className="w-full justify-center flex mb-28 z-50">
-        <div
-          className={`z-30 w-full bg-neutral-900 flex-col fixed mt-20 sm:mt-32 pt-6 mb-28 transition-all duration-300 ease-in-out lg:hidden ${
-            isOpen 
-              ? "opacity-100 translate-y-0 visible" 
-              : "opacity-0 -translate-y-full invisible"
-          }`}
-        >
-          <div>
-            <a href="#hero" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
-              Inicio
+      {/* Mobile Menu */}
+      <div
+        className={`fixed top-0 left-0 right-0 bg-neutral-900 z-40 transform transition-transform duration-300 ease-in-out lg:hidden ${
+          isOpen ? "translate-y-16 sm:translate-y-24" : "-translate-y-full"
+        }`}
+      >
+        <div className="py-4">
+          <a href="#hero" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
+            Inicio
+          </a>
+          <a href="#about" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
+            Sobre mí
+          </a>
+          <a href="#technologies" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
+            Tecnologías
+          </a>
+          <a href="#projects" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
+            Proyectos
+          </a>
+          <a href="#contact" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
+            Contacto
+          </a>
+          <div className="px-4">
+            <a href={cv} download="JuanJoséArenasGaviriaCV.pdf" className="bg-purple-600 rounded-lg py-1 px-2 text-center block w-full">
+              Descargar cv
             </a>
-            <a href="#about" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
-              Sobre mí
-            </a>
-            <a href="#technologies" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
-              Tecnologías
-            </a>
-            <a href="#projects" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
-              Proyectos
-            </a>
-            <a href="#contact" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
-              Contacto
-            </a>
-            <a href={cv} download="JuanJoséArenasGaviriaCV.pdf" className="bg-purple-600 rounded-lg py-1 px-2 text-center block">Descargar cv</a>
           </div>
           
-          {/* MOBILE ICONS */}
+          {/* Mobile Icons */}
           <div className="flex items-center justify-center gap-4 text-2xl mt-6 text-white pb-4">
             <a href="https://www.linkedin.com/in/juan-jos%C3%A9-arenas-gaviria-144b79249/" className="hover:text-purple-500 transition-colors duration-200">
               <FaLinkedin />
@@ -131,7 +132,7 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };
