@@ -128,32 +128,32 @@ const Technologies = () => {
                 <DiSass className='text-6xl text-pink-400 hover:scale-110 transition-all ease-in-out'/>
             </motion.div>
             <motion.div
-            variants={iconVariants(2.5)}
+            variants={iconVariants(4)}
             initial="initial"
             animate="animate"
             className='rounded-2xl border-4 border-neutral-800 p-4'>
                 <RiTailwindCssLine className='text-6xl text-blue-500 hover:scale-110 transition-all ease-in-out'/>
             </motion.div>
             <motion.div
-            variants={iconVariants(2.5)}
+            variants={iconVariants(3)}
             initial="initial"
             animate="animate"
             className='rounded-2xl border-4 border-neutral-800 p-4'>
                 <FaBootstrap className='text-6xl text-purple-600 hover:scale-110 transition-all ease-in-out'/>
             </motion.div>
             <motion.div
-            variants={iconVariants(2.5)}
+            variants={iconVariants(1)}
             initial="initial"
             animate="animate"
             className='rounded-2xl border-4 border-neutral-800 p-4'>
                 <FaFigma className='text-6xl text-pink-500 hover:scale-110 transition-all ease-in-out'/>
             </motion.div>
             <motion.div
-            variants={iconVariants(2.5)}
+            variants={iconVariants(5)}
             initial="initial"
             animate="animate"
             className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <FaGithub className='text-6xl text-black hover:scale-110 transition-all ease-in-out'/>
+                <FaGithub className='text-6xl text-white hover:scale-110 transition-all ease-in-out'/>
             </motion.div>
         </motion.div>
     </div>
