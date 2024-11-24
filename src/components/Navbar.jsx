@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/jarenas1Logo.png";
-import cv from "../assets/JuanJoseArenasCV.pdf";
+import cv from "../assets/JuanJoseArenasGaviriaCV.pdf";
 import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
