@@ -23,7 +23,7 @@ export const PROJECTS = [
     description:
       "EasyOrder es un innovador SaaS diseñado para bares y discotecas, que optimiza la eficiencia y velocidad del servicio. Permite a los clientes realizar pedidos directamente desde sus mesas mediante un código QR, eliminando la espera y facilitando la identificación de cada mesa. Una solución que transforma la experiencia del usuario y potencia el rendimiento del personal.",
     technologies: ["HTML", "SCSS", "React", "Nestjs", "Tailwind", "PostgreSQL"],
-    repo:"https://github.com/jarenas1/EasyOrder-FRONTEND.git",
+    repo:"https://github.com/jarenas1/EasyOrder-BACKEND.git",
     deploy:"https://jarenas1.github.io/EasyOrder--LANDING-PAGE/",
   },
   {
