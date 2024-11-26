@@ -94,7 +94,7 @@ const Navbar = () => {
           isOpen ? "translate-y-16 sm:translate-y-24" : "-translate-y-full"
         }`}
       >
-        <div className="py-8">
+        <div className="py-8 sm:py-14">
           <a href="#hero" className="py-2 text-white text-center block hover:bg-neutral-800 hover:text-purple-500 transition-colors duration-200">
             Inicio
           </a>
