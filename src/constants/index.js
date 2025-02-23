@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.jpg";
 
 export const HERO_CONTENT = "Soy un desarrollador full-stack junior con una fuerte pasión por crear aplicaciones web robustas y escalables. Especializado en el desarrollo backend con Spring Boot, construyo arquitecturas sólidas que soportan el crecimiento de los proyectos. En el frontend, utilizo React para diseñar interfaces intuitivas y funcionales, siempre priorizando la experiencia del usuario. Mi motivación principal es superar retos técnicos, colaborar en equipos dinámicos y aportar soluciones innovadoras que impulsen el éxito de cualquier proyecto.";
 
@@ -43,6 +44,14 @@ export const PROJECTS = [
     technologies: ["JSX", "CSS", "React", "Tailwind", "Motion"],
     repo:"https://github.com/jarenas1/PORTFOLIO-REACT.git",
     deploy:"https://jarenas1.online/",
+  },
+  {
+    title: "VitaliaCare",
+    image: project5,
+    description:
+      "VitaliaCare es un sistema de gestión para clínicas que facilita la asignación de citas y la administración de horarios médicos, optimizando la organización y mejorando la atención a los pacientes. Actualmente, el frontend se encuentra en desarrollo.",
+    technologies: ["Java", "SpringBoot", "MySQL", "Docker", "Angular"],
+    repo:"https://github.com/jarenas1/VITALIACARE-BACKEND.git",
   },
 ];
 
